@@ -1,0 +1,76 @@
+<!-- <h1>Hi {{currentUser.username}}!</h1>
+<p>You're logged in with Angular 7!!</p>
+<h3>All registered users:</h3>
+<ul>
+    <li *ngFor="let user of users">
+        {{user.username}} ({{user.email}} )
+        - <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
+    </li>
+</ul>
+ -->
+
+<div class="container-fluid" style="margin-top: 3rem;">
+  <div class="row">
+    <div class="col-lg-6 offset-md-3 ">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for...">
+        <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Search</button>
+                </span>
+      </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+  </div><!-- /.row -->
+
+
+  <div class="row " style="padding-top: 1rem;">
+    <div class="col-md-2 " style=" border-right: 1px solid;">
+      <p>Start Price</p>
+      <input type="text" class="form-control" placeholder="Start Price" aria-describedby="sizing-addon1">
+      <p style="padding-top: 1rem;">End Price</p>
+      <input type="text" class="form-control" placeholder="End Price" aria-describedby="sizing-addon1">
+
+      <p style="padding-top: 1rem;">Manufacturer</p>
+      <!-- Single button -->
+
+      <div ngbDropdown class="d-inline-block">
+        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Any</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button ngbDropdownItem>Action - 1</button>
+          <button ngbDropdownItem>Another Action</button>
+          <button ngbDropdownItem>Something else is here</button>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-10 ">
+      <div class="row">
+        <div class="col-md-2.5">
+          <a href="#" class="thumbnail">
+            <img height="200" width="200" style="margin-left: 2rem;"
+                 src="http://img2.imgtn.bdimg.com/it/u=3818001885,1026779079&fm=26&gp=0.jpg" alt="...">
+          </a>
+        </div>
+        <div class="col-md-2.5">
+          <a href="#" class="thumbnail">
+            <img height="200" width="200" style="margin-left: 2rem;"
+                 src="http://img2.imgtn.bdimg.com/it/u=3818001885,1026779079&fm=26&gp=0.jpg" alt="...">
+          </a>
+        </div>
+        <div class="col-md-2.5">
+          <a href="#" class="thumbnail">
+            <img height="200" width="200" style="margin-left: 2rem;"
+                 src="http://img2.imgtn.bdimg.com/it/u=3818001885,1026779079&fm=26&gp=0.jpg" alt="...">
+          </a>
+        </div>
+        <div class="col-md-2.5">
+          <a href="#" class="thumbnail">
+            <img height="200" width="200" style="margin-left: 2rem;"
+                 src="http://img2.imgtn.bdimg.com/it/u=3818001885,1026779079&fm=26&gp=0.jpg" alt="...">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
