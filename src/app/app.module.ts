@@ -19,6 +19,9 @@ import {SellerHomeComponent} from './seller-home/seller-home.component';
 import {AddItemComponent} from './add-item/add-item.component';
 import {ReportComponent} from './report/report.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { UserBuyTrasactionsComponent } from './user-buy-trasactions/user-buy-trasactions.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
@@ -32,7 +35,10 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     SellerRegisterComponent,
     SellerHomeComponent,
     AddItemComponent,
-    ReportComponent
+    ReportComponent,
+    UserBuyTrasactionsComponent,
+    CheckoutComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

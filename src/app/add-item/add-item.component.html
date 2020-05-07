@@ -1,1 +1,92 @@
-<p>add-item works!</p>
+<div class="container">
+    <div class="row">
+        <div id="1st" class="col-sm-6 offset-sm-3">
+            <h2 class="text-center">Add An Item</h2>
+            </div>
+    </div>
+            <div class="row">
+                <div id="2nd" class="col-md-4">
+
+                </div>
+                <div id="3rd" class="col-md-4 offset-md-1">
+                    
+            <form [formGroup]="additemForm" (ngSubmit)="onSubmit()" >
+
+          <div class="form-group">
+            <label for="category">Category</label>
+            <div class="item-input">
+                <select id="product-category">
+                </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subcategory">Sub-Category</label>
+            <div class="item-input">
+                <select id="product-subcategory">
+                </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="itemname">Item name</label>
+            <div class="item-input">
+                <input type="text" id="product-name" placeholder="name">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="price">Price</label>
+            <div class="item-input">
+                <input type="text" id="product-price" >
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="count">No of stock items</label>
+            <div class="item-input">
+                <input type="text" id="product-count">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="item-inner">
+                <div class="item-title label">Type</div>
+                <div class="item-input">
+                    <select id="product-subcategory">
+                    </select>
+                </div>
+            </div>
+          </div>
+<div class="form-group">
+    <div class="item-title label">Pics</div>
+    <div class="item-input">
+        <input type="file" id="small-img">
+    </div>
+</div>
+
+
+<div class="form-group">
+    <div class="item-title label">Details Pics</div>
+    <div class="item-input">
+        <input type="file" id="detail-img">
+    </div>
+</div>
+<div class="form-group">
+    <div class="item-title label">Description</div>
+    <div class="item-input">
+        <textarea id="product-desc" placeholder="description"></textarea>
+    </div>
+</div>
+<div class="row">
+
+    <div class="col-md-4 ">
+        <button class="btn btn-primary">Submit</button>
+    </div>
+    <div class="col">
+        <button class="btn btn-primary" >Cancel</button>
+    </div>
+</div>
+
+          </form>
+        </div>
+    </div>

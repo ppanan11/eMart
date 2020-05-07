@@ -1,0 +1,109 @@
+<div class="container">
+    <div class="row">
+        <div class="site-main col-sm-12 full-width">
+            <div class="entry-content">
+                <div class="woocommerce">
+<form name="checkout"  class="checkout woocommerce-checkout" [formGroup]="checkoutForm" (ngSubmit)="update()">
+
+
+<div class="row">
+  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+      <div class="row" id="customer_details">
+          <div class="col-md-6 col-12">
+
+          </div>
+
+
+      </div>
+
+
+  </div>
+
+  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+      <h3 id="order_review_heading">Your order</h3>
+
+
+      <div id="order_review" class="woocommerce-checkout-review-order">
+          <table class="shop_table woocommerce-checkout-review-order-table">
+              <tbody>
+              <tr>
+                  <th>Product</th>
+                  <th>Total</th>
+              </tr>
+              <tr class="cart_item">
+                  <td class="product-name">
+                      <div class="review-wrap">
+                          <span class="cart_item_title">	Hyper shoe</span>
+                          <span class="product-quantity">× 1</span></div>
+                  </td>
+                  <td class="product-total">
+                          <span class="woocommerce-Price-amount amount"><span
+                                  class="woocommerce-Price-currencySymbol">$</span>100</span>
+                  </td>
+              </tr>
+              <tr class="cart_item">
+                  <td class="product-name">
+                      <div class="review-wrap">
+                          <span class="cart_item_title">	Sneaker v5</span>
+                          <span class="product-quantity">× 1</span></div>
+                  </td>
+                  <td class="product-total">
+                          <span class="woocommerce-Price-amount amount"><span
+                                  class="woocommerce-Price-currencySymbol">$</span>70</span>
+                  </td>
+              </tr>
+              </tbody>
+              <tfoot>
+
+              <tr class="cart-subtotal">
+                  <th>Subtotal</th>
+                  <td><span class="woocommerce-Price-amount amount"><span
+                          class="woocommerce-Price-currencySymbol">$</span>170</span>
+                  </td>
+              </tr>
+
+
+              <tr class="order-total">
+                  <th>Total</th>
+                  <td><strong><span
+                          class="woocommerce-Price-amount amount"><span
+                          class="woocommerce-Price-currencySymbol">$</span>170</span></strong>
+                  </td>
+              </tr>
+
+
+              </tfoot>
+          </table>
+
+          <div id="payment" class="woocommerce-checkout-payment">
+              
+              <div class="form-row place-order">
+                
+
+
+
+                  <button type="submit" class="button alt"
+                          name="woocommerce_checkout_place_order"
+                          id="place_order" value="Place order"
+                          data-value="Place order">Place order
+                  </button>
+
+                  <input type="hidden" id="woocommerce-process-checkout-nonce"
+                         name="woocommerce-process-checkout-nonce"
+                         value="a1d2cbc4f5"><input type="hidden"
+                                                   name="_wp_http_referer"
+                                                   value="/?wc-ajax=update_order_review">
+              </div>
+          </div>
+
+      </div>
+
+  </div>
+</div>
+</form>
+</div>
+</div>
+        </div>
+    </div>
+</div>
+

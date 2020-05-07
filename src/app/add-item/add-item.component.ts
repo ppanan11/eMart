@@ -1,16 +1,30 @@
 import {Component, OnInit} from '@angular/core';
+import {FormBuilder, FormGroup, Validators, FormsModule} from '@angular/forms';
 
 @Component({
-  selector: 'app-add-item',
-  templateUrl: './add-item.component.html',
-  styleUrls: ['./add-item.component.css']
+  templateUrl: './add-item.component.html'
 })
 export class AddItemComponent implements OnInit {
-
-  constructor() {
+  additemForm: FormGroup;
+  submitted = false;
+  
+  constructor(
+    private formBuilder: FormBuilder
+  ) {
   }
+  
 
   ngOnInit(): void {
+    this.additemForm=this.formBuilder.group({
+    })
   }
 
+  onSubmit() {
+    this.submitted = true;
+
+    // stop here if form is invalid
+    if (this.additemForm.invalid) {
+      return;
+    }
+  }
 }
