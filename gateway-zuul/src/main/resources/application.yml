@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: gateway-zuul
+server:
+  port: 7600
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@localhost:7776/eureka/
+zuul:
+  routes:
+    user-register: /user/** # /userlogin->/user/userlogin
+    seller: /seller/** #seller related service
+#    #授权服务
+#    auth-service:
+#      auth-service: /auth/**
+#      #为了添加授权验证，我们需要传递“/auth/”在路径中来验证服务
+#      strip-prefix: false
+#      sensitive-headers: Cookie,Set-Cookie
+
+

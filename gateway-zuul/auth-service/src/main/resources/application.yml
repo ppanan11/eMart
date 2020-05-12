@@ -1,0 +1,24 @@
+Spring:
+  application:
+    name: auth-service
+#  main:
+#    allow-bean-definition-overriding: true #当遇到同样名字的时候，是否允许覆盖注册
+#  datasource:
+#    username: root
+#    password: 123456
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://192.168.61.101:3306/emart
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+#    database-platform: org.hibernate.dialect.MySQLInnoDBDialect
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@localhost:7776/eureka/
+
+server:
+  port: 8081
+
